@@ -127,4 +127,5 @@ app.listen(3000, () => {
   git init: khởi tạo git
   git status: các untrackfile, .gitignore để chứa file không muốn sử dụng git
   git add: thêm file vào staged file -> để chuẩn bị thêm vào commit
+  git commit -m "...":  tạo commnit với message
 */
