@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    
+</head>
+<body>
+    {{>header}}
+    <p>create by {{name}}</p>
+    <form action="">
+        <input type="text" placeholder="Address">
+        <button>Search</button>
+    </form>
+    {{>footer}}
+
+    <p id="message-one"></p>
+    <p id="message-two"></p>
+
+    <script src="/js/app.js"></script>
+    {{!-- 
+        file js nên load cuối cùng vì một số thành phần code trong js file có thể
+        trỏ đến các thành phần html bằng browserAPI như querySelector, getElementById
+        => có thể khiến các biến trong js file mang giá trị undefined
+     --}}
+</body>
+</html>
