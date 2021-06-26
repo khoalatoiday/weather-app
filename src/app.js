@@ -128,4 +128,12 @@ app.listen(3000, () => {
   git status: các untrackfile, .gitignore để chứa file không muốn sử dụng git
   git add: thêm file vào staged file -> để chuẩn bị thêm vào commit
   git commit -m "...":  tạo commnit với message
+
+  Sử dụng SSH key để chuyển code từ máy tính của chúng ta với bên thứ 3 một cách an 
+  toàn
+  tạo ssh key: ssh-keygen -t rsa -b 4096 -C "ssh key generate"
+  Xem ssh key: ls -a -l ~/.ssh
+  Sử dụng: eval  "$(ssh-agent -s)"
+  ssh-add  ~/.ssh/id_rsa
+  Kiểm tra kết nối: ssh -T git@github.com
 */
