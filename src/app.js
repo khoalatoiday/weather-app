@@ -136,4 +136,6 @@ app.listen(3000, () => {
   Sử dụng: eval  "$(ssh-agent -s)"
   ssh-add  ~/.ssh/id_rsa
   Kiểm tra kết nối: ssh -T git@github.com
+
+  update github: git push
 */
